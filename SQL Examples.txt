@@ -1,0 +1,26 @@
+1.) SELECT mov_title
+FROM Movie
+WHERE mov_id NOT IN (
+SELECT mov_id 
+FROM rating
+);
+
+2.) SELECT mov_id, mov_title, mov_year
+FROM Movie
+WHERE mov_title LIKE '%Brother%'
+ORDER BY mov_year ASC;
+
+3.) SELECT match_num, goals_scored, team_name
+FROM Match_Details a
+JOIN Team_Info b ON a.team_id = b.team_id
+WHERE decided_by='NT'
+ORDER BY match_num;
+
+SELECT match_no,country_name,goal_score
+FROM match_details a
+JOIN soccer_country b
+ON a.team_id=b.country_id
+WHERE decided_by='N'
+ORDER BY match_no;
+
+4.) 
