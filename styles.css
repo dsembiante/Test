@@ -12,12 +12,30 @@ header,footer {
 }
 header {
 	text-align: center;
+	padding-top: 60px;
 }
 footer {
 	text-align: center;
 }
+h3 {
+	margin:0;
+}
+nav {
+	text-align:center;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 .profile-img {
-	width: 550px;
+	width: 570px;
 	height: 425px;
 	border-radius: 50%;
 }
@@ -27,14 +45,15 @@ footer {
 .content-wrap {
 	max-width: 1800px;
 	margin: 0 auto;
-	padding: 10px;
-}
-li {
-	margin-left: 15px;
+	padding: 30px 20px;
+	overflow: auto;
 }
 a {
 		color: #E9291C;
 }
 a:hover {
 	text-decoration: none;
+}
+h3 ~ p {
+	margin:0;
 }
