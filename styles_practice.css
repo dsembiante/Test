@@ -1,13 +1,17 @@
 /* Color Palette
-#2B2D42 - dark blue
-#8D99AE - light blue
-#EDF2F4 - blue/white
+#191970 - navy blue
+#FFFFFF - white
+#708090 - slategray
+#808080 - gray
+#000000 - black
 #EF233C - red
+#EDF2F4 - blue/white
+#00042B - dark blue
 */
 
 /* Global styles
 -------------------------*/
-/* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
   box-sizing: border-box;
 }
@@ -19,7 +23,7 @@ body {
   margin: 0;
 }
 h1, h2 {
-  font-family: 'Caveat', cursive;
+  font-family: "Times New Roman";
   font-weight: 400;
 }
 h1 {
@@ -58,8 +62,8 @@ a:hover {
 /* Header and Footer
 -------------------------*/
 header, footer {
-  background: #2B2D42;
-  color: #8D99AE;
+  background: #00042B;
+  color: #FFFFFF;
 }
 /* header */
 header {
@@ -67,7 +71,6 @@ header {
   position: relative;
 }
 header h1, header h2 {
-  color: #EDF2F4;
   margin: 0;
 }
 .profile-img {
@@ -111,7 +114,7 @@ nav a {
 /* Work Experience
 -------------------------*/
 .work {
-  background: #EDF2F4;
+  background: #FFFFFF;
 }
 h3 ~ p {
   margin: 0;
@@ -127,15 +130,23 @@ h3 ~ p {
 /* Education
 -------------------------*/
 .education {
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-              url(../images/toronto.jpg) no-repeat fixed;
-  background-size: cover;
+  background: 	#DCDCDC;
 }
 p + h3 {
   margin-top: 30px;
 }
 
+/* Technical Skills
+-------------------------*/
+.skills {
+  background: #C0C0C0;	
+}
 
+/* Honors & Awards
+-------------------------*/
+.awards {
+  background: #808080;		
+}
 
 /* Media Queries
 -------------------------*/
